@@ -1,0 +1,155 @@
+---
+title: "Data Sheet"
+author: "Yijun Shen"
+date: "27/04/2022"
+output: pdf_document
+bibliography: references.bib
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Data Sheet
+
+**Motivation**
+
+1. *For what purpose was the dataset created? Was there a specific task in mind? Was there a specific gap that needed to be filled? Please provide a description.*
+    - The data set was created to find out what influences people to smoke and drink. People smoke and drink, but why and what affects them? Find out why people smoke and drink and some of the factors that influence them.
+2. *Who created the dataset (for example, which team, research group) and on behalf of which entity (for example, company, institution, organization)?*
+    - The Canadian government created this dataset to represent the country.
+3. *Who funded the creation of the dataset? If there is an associated grant, please provide the name of the grantor and the grant name and number.*
+    - The creation of this dataset was funded by the Government of Canada, through the Program Statistics Canada.
+4. *Any other comments?*
+    - No other comments.
+
+**Composition**
+
+1. *What do the instances that comprise the dataset represent (for example, documents, photos, people, countries)? Are there multiple types of instances (for example, movies, users, and ratings; people and interactions between them; nodes and edges)? Please provide a description.*
+	- Examples of the dataset are representative of respondents across Canada. And there are multiple types, with gender, place of residence, province, age and education as the main types. 
+2. *How many instances are there in total (of each type, if appropriate)?*
+	- There are 38 cases in total, and the main types are sex, residence, province, age and education background.
+3. *Does the dataset contain all possible instances or is it a sample (not necessarily random) of instances from a larger set? If the dataset is a sample, then what is the larger set? Is the sample representative of the larger set (for example, geographic coverage)? If so, please describe how this representativeness was validated/verified. If it is not representative of the larger set, please describe why not (for example, to cover a more diverse range of instances, because instances were withheld or unavailable).*
+	- This dataset was selected from a larger dataset containing data on drugs, drugs, alcohol, tobacco and other related matters across Canada. This sample cannot represent a larger set, because the data only selects two related data sets, and each sample represents different information, so it cannot represent a larger data set.
+4. *What data does each instance consist of? "Raw" data (for example, unprocessed text or images) or features? In either case, please provide a description.*
+	- Each instance contains frequency, quantity, and status. This is true for both alcohol and tobacco.
+5. *Is there a label or target associated with each instance? If so, please provide a description.*
+	- There is no fixed tag or target association.
+6. *Is any information missing from individual instances? If so, please provide a description, explaining why this information is missing (for example, because it was unavailable). This does not include intentionally removed information, but might include, for example, redacted text.*
+	- There is a lack of information, which is caused by the lack of answers to questions in the process of investigation and collection of original data, resulting in the loss of follow-up dat
+7. *Are relationships between individual instances made explicit (for example, users' movie ratings, social network links)? If so, please describe how these relationships are made explicit.*
+	- There is no very clear relationship between the delay instances, only through data analysis can find the relationship.
+8. *Are there recommended data splits (for example, training, development/validation, testing)? If so, please provide a description of these splits, explaining the rationale behind them.*
+	- There is no recommended data split.
+9. *Are there any errors, sources of noise, or redundancies in the dataset? If so, please provide a description.*
+	- Only missing data exists in the data set. Please refer to question 6 for details.
+10. *Is the dataset self-contained, or does it link to or otherwise rely on external resources (for example, websites, tweets, other datasets)? If it links to or relies on external resources, a) are there guarantees that they will exist, and remain constant, over time; b) are there official archival versions of the complete dataset (that is, including the external resources as they existed at the time the dataset was created); c) are there any restrictions (for example, licenses, fees) associated with any of the external resources that might apply to a dataset consumer? Please provide descriptions of all external resources and any restrictions associated with them, as well as links or other access points, as appropriate.*
+	- The data was extracted from ODESI and the source website is Statistics Canada. First of all, this data will always exist, because it is publicly available data provided to the public by the Canadian government, and it only records data from 20171, so it will not change. Secondly, the data details and corresponding Codebook are available on the statistics Canada website, and each instance is well described. Finally, the data is available completely free of charge at no cost, and all information about the data can be found on the Statistics Canada website.
+11. *Does the dataset contain data that might be considered confidential (for example, data that is protected by legal privilege or by doctor-patient confidentiality, data that includes the content of individuals' non-public communications)? If so, please provide a description.*
+	- There is no secret in this data, it is all transparent and open.
+12. *Does the dataset contain data that, if viewed directly, might be offensive, insulting, threatening, or might otherwise cause anxiety? If so, please describe why.*
+	- This data does not contain any data which may be offensive, insulting, threatening, etc.
+13. *Does the dataset identify any sub-populations (for example, by age, gender)? If so, please describe how these subpopulations are identified and provide a description of their respective distributions within the dataset.*
+	- This dataset does not identify any subpopulations.
+14. *Is it possible to identify individuals (that is, one or more natural persons), either directly or indirectly (that is, in combination with other data) from the dataset? If so, please describe how.*
+	- The data does not contain any data that may directly or indirectly identify individuals.
+15. *Does the dataset contain data that might be considered sensitive in any way (for example, data that reveals race or ethnic origins, sexual orientations, religious beliefs, political opinions or union memberships, or locations; financial or health data; biometric or genetic data; forms of government identification, such as social security numbers; criminal history)? If so, please provide a description.*
+	- The dataset does not contain any data that might be considered sensitive.
+16. *Any other comments?*
+	- No other comments.
+
+**Collection process**
+
+1. *How was the data associated with each instance acquired? Was the data directly observable (for example, raw text, movie ratings), reported by subjects (for example, survey responses), or indirectly inferred/derived from other data (for example, part-of-speech tags, model-based guesses for age or language)? If the data was reported by subjects or indirectly inferred/derived from other data, was the data validated/verified? If so, please describe how.*
+	- Data for each instance were obtained from the citizen awakening questionnaire and released after statistics Canada validated the data.
+2. *What mechanisms or procedures were used to collect the data (for example, hardware apparatuses or sensors, manual human curation, software programs, software APIs)? How were these mechanisms or procedures validated?*
+	- The data was collected using Internet software and telephone consultations.
+3. *If the dataset is a sample from a larger set, what was the sampling strategy (for example, deterministic, probabilistic with specific sampling probabilities)?*
+	- If the sample is drawn from a larger set, the sample should be drawn at random. The same number can be drawn at random for different ages or genders to be used as a new data set.
+4. *Who was involved in the data collection process (for example, students, crowdworkers, contractors) and how were they compensated (for example, how much were crowdworkers paid)?*
+	- No one was involved in the data collection process because it was all done by software programs and telephone calls.
+5. *Over what timeframe was the data collected? Does this timeframe match the creation timeframe of the data associated with the instances (for example, recent crawl of old news articles)? If not, please describe the timeframe in which the data associated with the instances was created.*
+	- The data were collected in 2017 from February to December, making the data more representative due to the wide time range.
+6. *Were any ethical review processes conducted (for example, by an institutional review board)? If so, please provide a description of these review processes, including the outcomes, as well as a link or other access point to any supporting documentation.*
+	- No ethical review process.
+7. *Did you collect the data from the individuals in question directly, or obtain it via third parties or other sources (for example, websites)?*
+	- Data provided by a third party website -- Odesi.
+8. *Were the individuals in question notified about the data collection? If so, please describe (or show with screenshots or other information) how notice was provided, and provide a link or other access point to, or otherwise reproduce, the exact language of the notification itself.*
+	- The parties concerned were not informed of the collection of information as the data were transparent and public.
+9. *Did the individuals in question consent to the collection and use of their data? If so, please describe (or show with screenshots or other information) how consent was requested and provided, and provide a link or other access point to, or otherwise reproduce, the exact language to which the individuals consented.*
+	- The person concerned consents to the collection and use of the information as it is open and transparent.
+10. *If consent was obtained, were the consenting individuals provided with a mechanism to revoke their consent in the future or for certain uses? If so, please provide a description, as well as a link or other access point to the mechanism (if appropriate).*
+	- No need to provide a mechanism.
+11. *Has an analysis of the potential impact of the dataset and its use on data subjects (for example, a data protection impact analysis) been conducted? If so, please provide a description of this analysis, including the outcomes, as well as a link or other access point to any supporting documentation.*
+	- There is no analysis of the potential impact of data sets and their use on data topics.
+12. *Any other comments?*
+	- There is no other commonts.
+
+**Preprocessing/cleaning/labeling**
+
+1. *Was any preprocessing/cleaning/labeling of the data done (for example, discretization or bucketing, tokenization, part-of-speech tagging, SIFT feature extraction, removal of instances, processing of missing values)? If so, please provide a description. If not, you may skip the remaining questions in this section.*
+	- The data has been processed and cleaned. All the data that can be transformed into dummy variable are transformed into words from numerical, and some data irrelevant to the studied problem are appropriately deleted.
+2. *Was the "raw" data saved in addition to the preprocessed/cleaned/labeled data (for example, to support unanticipated future uses)? If so, please provide a link or other access point to the "raw" data.*
+	- https://search1.odesi.ca/#/details?uri=%2Fodesi%2FCTADS-82M0020-E-2017-person.xml
+3. *Is the software that was used to preprocess/clean/label the data available? If so, please provide a link or other access point.*
+	- R Studio
+4. *Any other comments?*
+	- No other comments.
+
+**Uses**
+
+1. *Has the dataset been used for any tasks already? If so, please provide a description.*
+	- The dataset is not currently being used for any task.
+2. *Is there a repository that links to any or all papers or systems that use the dataset? If so, please provide a link or other access point.*
+	- None
+3. *What (other) tasks could the dataset be used for?*
+	- Data sets record drug, drug, alcohol and tobacco use and trends across Canada.
+4. *Is there anything about the composition of the dataset or the way it was collected and preprocessed/cleaned/labeled that might impact future uses? For example, is there anything that a dataset consumer might need to know to avoid uses that could result in unfair treatment of individuals or groups (for example, stereotyping, quality of service issues) or other risks or harms (for example, legal risks, financial harms)? If so, please provide a description. Is there anything a dataset consumer could do to mitigate these risks or harms?*
+	- The collection or composition of a data set does not affect future use because the data is fixed.
+5. *Are there tasks for which the dataset should not be used? If so, please provide a description.*
+	- No bad data.
+6. *Any other comments?*
+	- No other comments.
+
+**Distribution**
+
+1. *Will the dataset be distributed to third parties outside of the entity (for example, company, institution, organization) on behalf of which the dataset was created? If so, please provide a description.*
+	- The data set will not be distributed to the public for reference, as the data is for personal analysis only.
+2. *How will the dataset be distributed (for example, tarball on website, API, GitHub)? Does the dataset have a digital object identifier (DOI)?*
+	- The data will be stored in Github and in doi.
+3. *When will the dataset be distributed?*
+	- Dec. 2017
+4. *Will the dataset be distributed under a copyright or other intellectual property (IP) license, and/or under applicable terms of use (ToU)? If so, please describe this license and/ or ToU, and provide a link or other access point to, or otherwise reproduce, any relevant licensing terms or ToU, as well as any fees associated with these restrictions.*
+	- None
+5. *Have any third parties imposed IP-based or other restrictions on the data associated with the instances? If so, please describe these restrictions, and provide a link or other access point to, or otherwise reproduce, any relevant licensing terms, as well as any fees associated with these restrictions.*
+	- None
+6. *Do any export controls or other regulatory restrictions apply to the dataset or to individual instances? If so, please describe these restrictions, and provide a link or other access point to, or otherwise reproduce, any supporting documentation.*
+	- None
+7. *Any other comments?*
+	- Not other comments
+
+**Maintenance**
+
+1. *Who will be supporting/hosting/maintaining the dataset?*
+	- The Government of Canada will support, host and maintain the dataset.
+2. *How can the owner/curator/manager of the dataset be contacted (for example, email address)?*
+	- Contact Statistics Canada.
+3. *Is there an erratum? If so, please provide a link or other access point.*
+	- None
+4. *Will the dataset be updated (for example, to correct labeling errors, add new instances, delete instances)? If so, please describe how often, by whom, and how updates will be communicated to dataset consumers (for example, mailing list, GitHub)?*
+	- The data will not be updated.
+5. *If the dataset relates to people, are there applicable limits on the retention of the data associated with the instances (for example, were the individuals in question told that their data would be retained for a fixed period of time and then deleted)? If so, please describe these limits and explain how they will be enforced.*
+	- There is no human-related data in the data set, and no privacy exists.
+6. *Will older versions of the dataset continue to be supported/hosted/maintained? If so, please describe how. If not, please describe how its obsolescence will be communicated to dataset consumers.*
+	- The data records relevant data for 2017. Consumers can extract information from past data sets and compare it with current data to find trends.
+7. *If others want to extend/augment/build on/contribute to the dataset, is there a mechanism for them to do so? If so, please provide a description. Will these contributions be validated/verified? If so, please describe how. If not, why not? Is there a process for communicating/distributing these contributions to dataset consumers? If so, please provide a description.*
+	- There are no mechanics, unless they have a time machine to travel back to 2017.
+8. *Any other comments?*
+	- No other comments.
+	
+this data sheet used R[@citeR] and the form of Data sheet for data set[@gebru2021datasheets].
+
+\newpage 
+
+# Reference
